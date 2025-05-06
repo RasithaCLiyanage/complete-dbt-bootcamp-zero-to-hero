@@ -1,0 +1,1 @@
+cp "/mnt/c/Users/rliyanage/Downloads/Complete dbt Bootcamp slides.pdf" .
