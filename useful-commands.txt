@@ -1,1 +1,8 @@
 cp "/mnt/c/Users/rliyanage/Downloads/Complete dbt Bootcamp slides.pdf" .
+
+## set remote repository as the fork repo in my account
+git remote set-url origin https://github.com/RasithaCLiyanage/complete-dbt-bootcamp-zero-to-hero
+
+## setting repository git account credentails to personal account 
+git config user.name "rasithacliyanage"
+git config user.email "rasithacliyanage@hotmail.com"
