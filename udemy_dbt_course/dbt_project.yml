@@ -31,3 +31,19 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   udemy_dbt_course:
+    # This is a good place to set default values for your models. You can override
+    # these values in the individual model files using the `{{ config(...) }}` macro.
+
+    # For example, you could set the default materialization to "table" for all
+    # models in this project by setting `+materialized: view` or `+materialized: table` here.
+    +materialized: view
+    +enabled: true
+    
+    # models in the dim directory will be materialized as tables
+    dim:
+      +materialized: table
+      +enabled: true
+
+    src:
+      +materialized: ephemeral
+      +enabled: true
